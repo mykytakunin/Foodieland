@@ -1,0 +1,688 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background-color: white;
+  font-size: 16px;
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+
+.header-container {
+  margin-top: 46px;
+  padding-bottom: 40px;
+}
+
+.header-container::after {
+  content: "";
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  padding-top: 40px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  flex-basis: 100%;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: Lobster;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+}
+
+.logo-point {
+  color: #ff7426;
+}
+
+.link {
+  display: flex;
+  gap: 60px;
+}
+
+.link-item {
+  font-weight: 500;
+  color: #000;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 40px;
+}
+
+/* recept-section */
+
+.recepts-card {
+  position: relative;
+  border-radius: 30px;
+  background-color: #e7fafe;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hdpicked-imagean {
+  position: absolute;
+  top: 50px;
+  left: 675px;
+}
+
+.recepts-subtitle {
+  padding-top: 60px;
+  margin-left: 50px;
+  margin-bottom: 32px;
+}
+
+.subtitle-text {
+  position: relative;
+  width: 156px;
+  height: 45px;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  padding-left: 57px;
+  padding-right: 20px;
+  white-space: nowrap;
+}
+
+.subtitle-text::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/map.png");
+  background-repeat: no-repeat;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 11px;
+  margin-left: 20px;
+}
+
+.recepts-title {
+  font-size: 64px;
+  font-weight: 600;
+  max-width: 520px;
+  width: 100%;
+  margin-left: 50px;
+  margin-bottom: 24px;
+}
+
+.recepts-text {
+  max-width: 520px;
+  width: 100%;
+  font-weight: 400;
+  line-height: 28px;
+  margin-left: 50px;
+  opacity: 0.6;
+  margin-bottom: 30px;
+}
+
+.recept-notes {
+  display: flex;
+  gap: 16px;
+  margin-left: 50px;
+}
+
+.subtitle-time {
+  position: relative;
+  width: 156px;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  padding-left: 57px;
+  padding-right: 20px;
+  white-space: nowrap;
+}
+
+.subtitle-time::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/Timer.png");
+  background-repeat: no-repeat;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 11px;
+  margin-left: 20px;
+}
+
+.subtitle-food {
+  position: relative;
+  width: 156px;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  padding-left: 57px;
+  padding-right: 20px;
+  white-space: nowrap;
+}
+
+.subtitle-food::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/ForkKnife.png");
+  background-repeat: no-repeat;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 11px;
+  margin-left: 20px;
+}
+
+.recept-image {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.autor {
+  display: flex;
+  width: 163px;
+  height: 50px;
+  gap: 16px;
+  margin-left: 50px;
+
+  margin-bottom: 55px;
+}
+
+.autor-name {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.autor-date {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.recept-button {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  border-radius: 16px;
+  background: #000;
+  color: white;
+  font-size: 14px;
+  padding-left: 37px;
+  padding-right: 75px;
+  cursor: pointer;
+  border: none;
+}
+
+.recept-button::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/recept-button-icon.png");
+  background-repeat: no-repeat;
+  top: 16px;
+  left: 140px;
+}
+
+.button-container {
+  display: flex;
+  margin-top: 104px;
+  gap: 157px;
+  align-content: center;
+}
+
+/* Categories-section */
+
+.categories-section {
+  padding-top: 162px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories-title {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.Categories-button {
+  width: 200px;
+  height: 60px;
+  font-weight: 600;
+  border-radius: 16px;
+  background: #e7fafe;
+  border: none;
+  cursor: pointer;
+}
+
+.categories-item {
+  padding-top: 100px;
+  padding-left: 50px;
+  margin-top: 130px;
+  position: relative;
+  width: 180px;
+  height: 152px;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(112, 130, 70, 0) 0%,
+    rgba(112, 130, 70, 0.1) 100%
+  );
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.categories-item:nth-child(3) {
+  background: linear-gradient(
+    180deg,
+    rgba(204, 38, 27, 0) 0%,
+    rgba(204, 38, 27, 0.1) 100%
+  );
+}
+
+.categories-item:nth-child(4) {
+  background: linear-gradient(
+    180deg,
+    rgba(240, 158, 0, 0) 0%,
+    rgba(240, 158, 0, 0.1) 100%
+  );
+}
+
+.categories-img {
+  position: absolute;
+  top: -50px;
+  left: 40px;
+}
+
+.categories-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Section-cards */
+
+.cards-title {
+  margin-top: 183px;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.cards-cubtitle {
+  width: 706px;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0 auto;
+  margin-bottom: 96px;
+}
+
+.recept-card {
+  position: relative;
+  padding-left: 16px;
+  max-width: 400px;
+  max-height: 434px;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #e7f9fd 100%);
+}
+
+.card-image {
+  position: relative;
+  border-radius: 20px;
+  width: 368px;
+  height: 250px;
+  margin-bottom: 24px;
+}
+
+.card-name {
+  max-width: 352px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.detals {
+  display: flex;
+  gap: 58px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 44px;
+  padding-bottom: 32px;
+}
+
+.time {
+  margin-left: 58px;
+}
+
+.time::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/Timer.png");
+  background-repeat: no-repeat;
+  left: 40px;
+  bottom: 45px;
+}
+
+.time::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/ForkKnife.png");
+  background-repeat: no-repeat;
+  left: 175px;
+  bottom: 45px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 44px 40px;
+}
+
+/* Ads-section */
+
+.ads-section-title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-top: 312px;
+  margin-bottom: 24px;
+}
+
+.ads-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chef-image {
+  margin-top: 143px;
+  margin-bottom: 160px;
+}
+
+.ads-text {
+  width: 508px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 72px;
+}
+
+.ads-button {
+  max-width: 180px;
+  max-height: 60px;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Instagram-section */
+
+.instagram-container {
+  background-image: linear-gradient(
+    180deg,
+    rgba(231, 249, 253, 0) 0%,
+    #e7f9fd 100%
+  );
+  padding-bottom: 80px;
+}
+
+.instagram-section-title {
+  margin-top: 80px;
+  color: #000;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.instagram-text {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  max-width: 840px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.inst-list {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.inst-button {
+  width: 229px;
+  height: 60px;
+  position: relative;
+  border-radius: 16px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: start;
+  padding-left: 32px;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
+
+.inst-button::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/instagram-white.png");
+  background-repeat: no-repeat;
+  top: 16px;
+  right: 0px;
+  left: 180px;
+}
+
+/* Inbox-container */
+
+.form {
+  position: relative;
+}
+
+.inbox-container {
+  position: relative;
+  border-radius: 60px;
+  background: #e7f9fd;
+  margin-top: 160px;
+  padding-bottom: 80px;
+  margin-bottom: 160px;
+  overflow: hidden;
+}
+
+.inbox-container::before {
+  content: "";
+  position: absolute;
+  width: 409px;
+  height: 400px;
+  top: 65px;
+  left: 0;
+  background-image: url("../images/inbox-salat.png");
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 60px;
+}
+
+.inbox-container::after {
+  content: "";
+  position: absolute;
+  width: 470px;
+  height: 355px;
+  top: 200px;
+  left: 1040px;
+  background-image: url("../images/ibox-egg.png");
+  background-repeat: no-repeat;
+}
+
+.inbox-title {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 80px;
+  margin-bottom: 24px;
+}
+
+.inbox-text {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-weight: 400;
+  line-height: 28px;
+  max-width: 620px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.email {
+  padding-top: 31px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  padding-right: 214px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 64px;
+  border-radius: 24px;
+  border: none;
+}
+
+.email:focus {
+  outline: none;
+}
+.email:hover {
+  outline: none;
+}
+.email::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.inbox-button {
+  max-width: 160px;
+  max-height: 60px;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background-color: #000;
+  position: absolute;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  top: 10px;
+  left: 730px;
+  cursor: pointer;
+}
+
+/* Footer */
+
+.footer-text {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 16px;
+}
+
+.footer-text::after {
+  content: "";
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  padding-top: 48px;
+  margin-bottom: 48px;
+}
+
+.web-autor {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  margin-bottom: 48px;
+  width: 100%;
+  max-width: 336px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.end {
+  display: flex;
+  justify-content: space-between;
+  gap: 338px;
+}
