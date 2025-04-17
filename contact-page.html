@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/contact-page-style.css" />
+    <title>Contact-page</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-container">
+          <nav class="nav">
+            <a class="logo" href="#"
+              >Foodieland<span class="logo-point">.</span></a
+            >
+
+            <ul class="link">
+              <li><a class="link-item" href="#">Home</a></li>
+              <li><a class="link-item" href="#">Recipes</a></li>
+              <li><a class="link-item" href="#">Blog</a></li>
+              <li><a class="link-item" href="#">Contact</a></li>
+              <li><a class="link-item" href="#">About us</a></li>
+            </ul>
+
+            <div class="nav-icons">
+              <a href="#">
+                <img
+                  class="nav-icon"
+                  src="./images/facebook.png"
+                  alt="facebook"
+              /></a>
+              <a href="#"
+                ><img class="nav-icon" src="./images/twitter.png" alt="twitter"
+              /></a>
+              <a href="#">
+                <img
+                  class="nav-icon"
+                  src="./images/instagram.png"
+                  alt="instagram"
+              /></a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-section">
+        <div class="container">
+          <h2 class="contact-section-title">Contact us</h2>
+          <div class="contact-section-container">
+            <img
+              class="contact-image"
+              src="./images/contact-image.jpg"
+              alt="contact-image"
+            />
+
+            <form action="contact-form">
+              <div class="form-container">
+                <div>
+                  <div class="form-item">
+                    <label class="contact-label" for="name">Name</label>
+                    <input
+                      class="contact-input"
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Enter your name..."
+                    />
+                  </div>
+                  <div class="form-item">
+                    <label class="contact-label" for="subject">Subject</label>
+                    <input
+                      class="contact-input"
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      placeholder="Enter subject..."
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div class="form-item">
+                    <label class="contact-label" for="email"
+                      >EMAIL ADDRESS</label
+                    >
+                    <input
+                      class="contact-input"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Your email address..."
+                    />
+                  </div>
+
+                  <div class="form-item">
+                    <label class="contact-label" for="advertising"
+                      >ENquiry type</label
+                    >
+                    <select
+                      class="contact-select"
+                      type="checkbox"
+                      id="advertising"
+                      name="advertising"
+                      placeholder="Advertising"
+                    >
+                      <option class="contact-option" value="advertising">
+                        Advertising
+                      </option>
+                      <option class="contact-option" value="styding">
+                        styding
+                      </option>
+                      <option class="contact-option" value="job">job</option>
+                      <option class="contact-option" value="other">
+                        other
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-item">
+                <label class="contact-label" for="messeges">MEssages</label>
+                <textarea
+                  class="contact-textarea"
+                  name="messeges"
+                  id="messeges"
+                  placeholder="Enter your messages..."
+                ></textarea>
+              </div>
+              <button class="contact-form-button">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="inbox-section">
+        <div class="container">
+          <div class="inbox-container">
+            <h3 class="inbox-title">Deliciousness to your inbox</h3>
+            <p class="inbox-text">
+              Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad
+              minim
+            </p>
+            <form class="form" name="inbox-form">
+              <input
+                class="email"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email address..."
+              />
+              <button class="inbox-button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <nav class="nav">
+          <a class="logo" href="#"
+            >Foodieland<span class="logo-point">.</span></a
+          >
+
+          <ul class="link">
+            <li><a class="link-item" href="#">Recipes</a></li>
+            <li><a class="link-item" href="#">Blog</a></li>
+            <li><a class="link-item" href="#">Contact</a></li>
+            <li><a class="link-item" href="#">About us</a></li>
+          </ul>
+        </nav>
+        <p class="footer-text">
+          Lorem ipsum dolor sit amet, consectetuipisicing elit,
+        </p>
+      </div>
+
+      <p class="web-autor">
+        © 2020 Flowbase. Powered by
+
+        <a
+          class="logo-point"
+          href="https://webflow.com/?gad_source=1&gclid=CjwKCAiA-Oi7BhA1EiwA2rIu23YFAJ3ar696wXsbLXF6kAv8Xr4NVKNdkwmI5GgAVNUjim2-xgFGCxoCgAAQAvD_BwE"
+          target="_blank"
+        >
+          Webflow</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
